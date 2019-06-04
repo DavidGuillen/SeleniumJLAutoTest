@@ -16,11 +16,20 @@ public class TestBookingJAL1 extends BookingFlow{
 	@Test
 	public void testBooking1() {
 		this.run(); //run default tests from the BookingFlow
-		MyDriver.quitDriver();
+		pause(10);
+//		MyDriver.quitDriver();
 	}
 	
-	@Override
-	protected void run() {
-		
+//	@Override
+//	protected void run() {
+//		
+//	}
+	
+	static void pause(int pauseSec) {
+		try {
+			Thread.sleep(pauseSec * 1000);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
 	}
 }

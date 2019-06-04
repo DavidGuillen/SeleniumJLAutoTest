@@ -1,6 +1,7 @@
 package tuto.eclipse.jal.selenium.loaders;
 
 import tuto.eclipse.jal.constants.JALConstants;
+import tuto.eclipse.jal.selenium.pageObjects.avaiPage.AvaiPage;
 import tuto.eclipse.jal.selenium.pageObjects.homePage.HomePage;
 
 public class BookingFlow {
@@ -18,7 +19,8 @@ public class BookingFlow {
 	}
 	
 	protected void avaiPageRun() {
-		// TODO On ajoutera la classe AVAI - A coder
+		AvaiPage avai = new AvaiPage();
+		avai.run();
 	}
 
 	protected void run() {
